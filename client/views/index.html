@@ -1,0 +1,230 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Semantically Enriched Search Engine for ArcGIS Online</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="/lib/bootstrap.css">
+<link rel="stylesheet" href="/lib/bootstrap-responsive.css">
+<link rel="stylesheet" href="/lib/bootstrap-tagsinput.css">
+<link rel="stylesheet" href="/lib/font-awesome.css" >
+<link rel="stylesheet" href="/css/style.css">
+</head>
+
+
+<body class="bg-img topmenufixed">
+	<img src="/img/ribbon_beta.gif" style="position:fixed;z-index:1999;top:0;right:0;height:40px;">
+	
+	<div class="navbar navbar-fixed-top">
+				<div class="navbar-inner ">
+						<div class="container text-center" style="padding: 0 0 0 0;"> 
+							 <a class="brand" href="#">Semantically Enriched Search Engine for ArcGIS Online</a>
+					 </div>           
+				</div>
+	</div>
+
+
+	<!-- Entire Container -->
+	<div class="container white shadow round" >
+		 <!-- main part -->
+		 <div style="min-height: 600px">  
+			 
+			 <!-- module title section -->
+			 <div class="row-fluid" style="margin-bottom: 20px;">
+					<div class="span10 text-left" >
+						<h2 id="moduleTitle">Semantic Search</h2>
+						<h5 class="text-left" id="moduleDescription">Semantic search based on a sample of map data from ArcGIS Online.
+						<!-- <br /> For efficiency, maximum 1,000 maps are returned for each query. -->
+						</h5>
+					</div>
+					<div class="span2 text-right" ><img src="/img/esri.jpg" style="max-height: 80px;" class="image-rounded"></div>
+			 </div>    
+				 
+			 <div class="border"></div>
+			 
+			 <!-- Module title section completed -->
+			
+			<div id="globalErrorMessageBar"></div> 
+			
+			
+			
+			<!-- intelligent search field begin -->
+			<div class="text-left panel Search">
+				 <div class="infoMessageBar"></div>
+				 <div class="text-left row-fluid round" style="background-color: #EBEBEB; padding:10px 5px 5px 5px; ">
+						<div class="span10">
+							<input class="span12" id="intelligentSearchField" type="text" placeholder="Type your search here, e.g., 'natural disaster', 'waterbodies', or 'transportation in california' ...">
+					 </div>
+					 
+					 <div class="span2 text-left">
+							<button class="btn btn-success span12 " id="intelligentSearchButton">Search</button>    
+					 </div>
+				</div> 
+				
+			</div>
+			<!-- intelligent search field complete -->
+			<br />
+
+			<div id="placeNR" class="text-left panel Search">
+				 <!-- <div class="infoMessageBar"></div> -->
+				 <div class="text-left row-fluid round" style="background-color: #EBEBEB; padding:10px 5px 5px 5px; ">
+					<div class="span9">
+						<div class="span10" id="placeNR_Result" >Here will show the search text with annotate places</div>
+					</div>
+					<div class="checkbox span3 text-left">
+						<!-- <label style="text-align: left;">
+							<input type="checkbox" id="placeNR_Checkbox"> Place NER
+						</label>
+						<label style="text-align: left;">
+							<input type="checkbox" id="userLocation_Checkbox"> User's Location
+						</label>
+						<label style="text-align: left;">
+							<input type="checkbox" id="naivesearch_Checkbox"> naive search
+						</label> -->
+						<label style="text-align: left;">
+							<input name="search" type="radio" id="placeNR_Checkbox"> Semantic Search
+						</label>
+						<label style="text-align: left;display:none">
+							<input type="checkbox" id="userLocation_Checkbox"> User's Location
+						</label>
+						<label style="text-align: left;">
+							<input name="search" type="radio" id="naivesearch_Checkbox"> Lucene
+						</label>
+
+					</div>
+					
+				</div> 
+			</div>
+
+			
+
+			<div id="resultContainer" style="padding:0px;" class="container">	
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a  href="#all" data-toggle="tab">All</a>
+					</li>
+					<li><a  href="#maps" data-toggle="tab">Maps</a></li>
+					<li><a href="#layers" data-toggle="tab">Layers</a></li>
+					<li><a href="#tools" data-toggle="tab">Tools</a></li>
+					<li><a href="#apps" data-toggle="tab">Applications</a></li>
+					<li><a href="#data" data-toggle="tab">Data Files</a></li>
+				</ul>
+
+				<div class="tab-content" id="intelligentResultPanelContainer">
+					<!-- <div class="row-fluid"> -->
+					<div class="tab-pane row-fluid active" id="all">
+						<div class="span10 well well-small searchResultPanel">
+							<ul class="thumbnails" id="ResultPanel_all"></ul>
+						</div>
+						<div class="span10">
+							<div class="span12" id="numOfResult_all" style="color:#00B7FF;font-weight: bold;" >The total number of returned results</div>
+						</div>
+					</div>
+					<div class="tab-pane row-fluid" id="maps">
+						<div class="span10 well well-small searchResultPanel">
+							<ul class="thumbnails" id="ResultPanel_maps"></ul>
+						</div>
+						<div class="span10">
+							<div class="span12" id="numOfResult_maps" style="color:#00B7FF;font-weight: bold;" >The total number of returned results</div>
+						</div>
+					</div>
+					<div class="tab-pane row-fluid" id="layers">
+						<div class="span10 well well-small searchResultPanel">
+							<ul class="thumbnails" id="ResultPanel_layers"></ul>
+						</div>
+						<div class="span10">
+							<div class="span12" id="numOfResult_layers" style="color:#00B7FF;font-weight: bold;" >The total number of returned results</div>
+						</div>
+					</div>
+					<div class="tab-pane row-fluid" id="tools">
+						<div class="span10 well well-small searchResultPanel">
+							<ul class="thumbnails" id="ResultPanel_tools"></ul>
+						</div>
+						<div class="span10">
+							<div class="span12" id="numOfResult_tools" style="color:#00B7FF;font-weight: bold;" >The total number of returned results</div>
+						</div>
+					</div>
+					<div class="tab-pane row-fluid" id="apps">
+						<div class="span10 well well-small searchResultPanel">
+							<ul class="thumbnails" id="ResultPanel_apps"></ul>
+						</div>
+						<div class="span10">
+							<div class="span12" id="numOfResult_apps" style="color:#00B7FF;font-weight: bold;" >The total number of returned results</div>
+						</div>
+					</div>
+					<div class="tab-pane row-fluid" id="data">
+						<div class="span10 well well-small searchResultPanel">
+							<ul class="thumbnails" id="ResultPanel_data"></ul>
+						</div>
+						<div class="span10">
+							<div class="span12" id="numOfResult_data" style="color:#00B7FF;font-weight: bold;" >The total number of returned results</div>
+						</div>
+					</div>
+						
+					
+					
+				</div>
+			</div>
+
+
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+			
+
+			<div class="loadingWaitIcon">Loading...</div>
+			
+		</div>
+		<!-- main part completes  -->
+			
+			<div class="footer container" style="height:30px;">
+				<div class="row-fluid">
+						<div class="span6 text-left">version 1.0 | AppStudio, Esri & STKO lab, UCSB  </div>           
+						<div class="span6 text-right">Handcrafted in California</div>        
+				</div>
+			</div>
+			
+	</div>
+	<!-- end of container -->
+
+		<script src="/lib/jquery.min.js"></script>
+		<script src="/lib/bootstrap.min.js"></script>
+		<script src="/lib/bootstrap-tagsinput.min.js"></script>
+		<script src="/js/util.js"></script>
+		<script src="/js/search.js"></script>
+		<script src="/js/main.js"></script>
+
+		
+		
+</body>
+</html>

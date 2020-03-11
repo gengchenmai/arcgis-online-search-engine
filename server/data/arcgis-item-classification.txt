@@ -1,0 +1,63 @@
+Maps	Web Map
+Maps	CityEngine Web Scene
+Maps	Web Scene
+Maps	360 VR Experience
+Maps	Pro Map
+Layers	Feature Service
+Layers	Map Service
+Layers	Image Service
+Layers	KML
+Layers	KML Collection
+Layers	WMS
+Layers	WFS
+Layers	WMTS
+Layers	Feature Collection
+Layers	Feature Collection Template
+Layers	Geodata Service
+Layers	Globe Service
+Layers	Vector Tile Service
+Layers	Scene Service
+Layers	Relational Database Connection
+Tools	Geometry Service
+Tools	Geocoding Service
+Tools	Network Analysis Service
+Tools	Geoprocessing Service
+Tools	Workflow Manager Service
+Applications	Web Mapping Application
+Applications	Mobile Application
+Applications	Code Attachment
+Applications	Operations Dashboard Add In
+Applications	Operation View
+Applications	Operations Dashboard Extension
+Applications	Native Application
+Applications	Native Application Template
+Applications	Native Application Installer
+Applications	Workforce Project
+Applications	Form
+Applications	Insights Workbook
+Applications	Insights Model
+Applications	Insights Page
+Applications	Dashboard
+Applications	Hub Initiative
+Applications	Hub Site Application
+Applications	Hub Page
+Applications	App Builder Extension
+Data Files	Symbol Set
+Data Files	Color Set
+Data Files	Shapefile
+Data Files	File Geodatabase
+Data Files	CSV
+Data Files	CAD Drawing
+Data Files	Service Definition
+Data Files	Document Link
+Data Files	Microsoft Word
+Data Files	Microsoft Powerpoint
+Data Files	Microsoft Excel
+Data Files	PDF
+Data Files	Image
+Data Files	Visio Document
+Data Files	iWork Keynote
+Data Files	iWork Pages
+Data Files	iWork Numbers
+Data Files	Report Template
+Data Files	Statistical Data Collection

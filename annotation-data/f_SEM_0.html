@@ -1,0 +1,780 @@
+
+    <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Find good items for ArcGIS Online search queries</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://s3.amazonaws.com/mturk-public/externalHIT_v1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <form name="mturk_form" method="post" id="mturk_form" formID="f_SEM_0" action="https://www.mturk.com/mturk/externalSubmit">
+      <input type="hidden" value="ASSIGNMENT_ID_NOT_AVAILABLE" name="assignmentId" id="assignmentId"><!-- HIT template: Survey-v3.0 --><!-- The following snippet enables the 'responsive' behavior on smaller screens -->
+      <meta content="width=device-width,initial-scale=1" name="viewport">
+      <section class="container" id="Survey" id="Survey" onchange="undisableSubmitButton()"><!-- Instructions -->
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+            <div class="panel panel-primary"><!-- WARNING: the ids "collapseTrigger" and "instructionBody" are being used to enable expand/collapse feature --><a class="panel-heading" href="javascript:void(0);" id="collapseTrigger"><strong>Survey Instructions</strong> <span class="collapse-text">(Click to expand)</span> </a>
+              <div class="panel-body" id="instructionBody" style="display: none;">
+                <p>This task aims at evaluating the ArcGIS Online search engine.</p>
+                <ul>
+                  <li>For this task, we are giving a search query which may be posted by an ArcGIS Online user.</li>
+                  <li>10 ArcGIS Online items are provided. Please rate the relevance of this item to the search query.</li>
+                  <li>The order of items does not related to their order of relevance.</li>
+                </ul>
+
+                      
+              </div>
+              <div class="panel-body" id="instructionBody1" style="">
+                <p>For this task, the meaning of each rating level means:</p>
+                <ul>
+                  <li><b>Perfect</b> (3): means the results is exactly what the user is looking for, and user will be satisfied if we only show this results to him/her.</li>
+                  <li><b>Good</b> (2): means the results is very relevant to what the user is looking for, but it may (or may not) be exactly what the user is looking for (because either the user’s intent is ambiguous, or multiple results may meet the user’s need). </li>
+                  <li><b>Some Relevance</b> (1): means the result is relevant to the query, but it is possible that the result is not what the user is looking for. However, showing it to the user is acceptable. </li>
+                  <li><b>Fair</b> (0): means the result is not that relevant, but it is OK to show to the user if we don’t have better results. </li>
+                  <li><b>Bad</b> (-1): it is really embarrassing to show this results to users. The user will question the quality of our system, or even be pissed off.</li>
+                </ul> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Instructions --><!-- Survey Layout -->
+
+        <div class="row" id="workContent">
+          <div class="col-sm-8 col-sm-offset-2">
+    
+            <div class="panel panel-default">
+              <div class="panel-body" id="0"><h4>Query: <b>New York water</b></h4>
+              </div>
+            </div>
+    
+            <div class="panel panel-default">
+              <div class="panel-body" id="1b37a85eada84cdb83dfe0cec3087f5d" ><label>Item 1. <a target="_blank" href="http://www.arcgis.com/home/item.html?id=1b37a85eada84cdb83dfe0cec3087f5d"><span class="bold" style="width:30px;">[Open ArcGIS Online Item]</span></a></label>
+                
+                <div id="1b37a85eada84cdb83dfe0cec3087f5d_info" class="row well" style="padding:0px;margin:0px -5px 5px -5px">
+                  <div style="" class="col-md-4">
+                    <img class="item-logo" style="display: block;padding-left:0px;" src="http://www.arcgis.com/sharing/rest/content/items/1b37a85eada84cdb83dfe0cec3087f5d/info/thumbnail/ago_downloaded.png">
+                  </div>
+                  <div style="overflow:hidden;padding-right:0px;" class="col-md-8">
+                    <div class="row">
+                      <p class="col-12"><b>Water Supply</b></p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Type:</b></p>
+                      <p class="col-9">Web Map</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Tags:</b></p>
+                      <p class="col-9">Water Supply; Growth Plan; GPGGH; Built Boundary</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Snippet:</b></p>
+                      <p class="col-9">Water supply in relation to the Growth Plan Built Boundary, 2008</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Desription:</b></p>
+                      <p class="col-9">None</p>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                
+
+                <div id="f_SEM_0_9">
+                  <label>Please select whether the above ArcGIS Online item is a good search result of the above query:</label>
+
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_9" type="radio" value="3">  Pefect </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_9" type="radio" value="2">  Good </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_9" type="radio" value="1">  Some Relevance</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_9" type="radio" value="0">  Fair </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_9" type="radio" value="-1">  Bad </label>
+                  </div>        
+                </div>
+              </div>
+            </div>
+        
+            <div class="panel panel-default">
+              <div class="panel-body" id="8ffa33598eee4cbf9aeaf1f57a1bda46" ><label>Item 2. <a target="_blank" href="http://www.arcgis.com/home/item.html?id=8ffa33598eee4cbf9aeaf1f57a1bda46"><span class="bold" style="width:30px;">[Open ArcGIS Online Item]</span></a></label>
+                
+                <div id="8ffa33598eee4cbf9aeaf1f57a1bda46_info" class="row well" style="padding:0px;margin:0px -5px 5px -5px">
+                  <div style="" class="col-md-4">
+                    <img class="item-logo" style="display: block;padding-left:0px;" src="http://www.arcgis.com/sharing/rest/content/items/8ffa33598eee4cbf9aeaf1f57a1bda46/info/thumbnail/ago_downloaded.png">
+                  </div>
+                  <div style="overflow:hidden;padding-right:0px;" class="col-md-8">
+                    <div class="row">
+                      <p class="col-12"><b>Estuary</b></p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Type:</b></p>
+                      <p class="col-9">Web Map</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Tags:</b></p>
+                      <p class="col-9">estuary; biodiversity</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Snippet:</b></p>
+                      <p class="col-9">Hudson River Estuary habitats</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Desription:</b></p>
+                      <p class="col-9">
+                <div class="col-12">
+                  <button type="button" class="collapsible">Click to see description</button>
+                  <div class="content">
+                    <p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><font size='3'>This map depicts significant habitats of the Hudson River Estuary, the tidal portion the Hudson River stretching 153 miles from New York Harbor to the Federal Lock and Dam in Troy. Data shown include: migratory fish runs, significant coastal fish and wildlife habitat areas, submerged aquatic vegetation, and tidal marsh habitat types.</font></p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><span style='font-size: medium; line-height: 1.38462;'><br /></span></p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><font size='3'><b>Tidal marshes</b>, <b>submerged aquatic vegetation (SAV)</b>, mudflats, and other significant habitats in and along the estuary support a great diversity of plants, fish, and wildlife and contribute to the economic significance of the estuary. More than 200 species of fish are found in the Hudson, including key commercial and recreational species like striped bass, and species of conservation concern like Atlantic and shortnose sturgeon. SAV beds consist of under-water plants that improve water quality in the Hudson and provide essential habitat for invertebrate animals, which feed fish and waterfowl that use the estuary. Tidal wetland habitats play a critical role as nursery grounds for fish and shellfish species, as well as providing nesting sites and migration stops for birds and sources of nutrients for the estuary food web. These wetland systems also help filter pollutants, buffer shoreline properties, and help stabilize the river’s shoreline.</font></p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><font size='3'> </font></p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><font size='3'>Several important fish species depend on travel between ocean and freshwater habitats in their life cycle, such as American eel and river herring.<b> Migratory fish runs</b> highlight stream reaches providing important aquatic habitat connectivity throughout the estuary watershed. Dams and poorly designed and installed culverts can isolate these species from critical habitat, in addition to impacting local flooding and water quality.</font></p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><font size='3'> </font></p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><font size='3'><b><font color='#000000'>Significant Coastal Fish and Wildlife Habitats</font></b> have been designated for protection by the New York State Department of State in accordance with the New York Waterfront Revitalization and Coastal Resources Act and are useful for planning at the local level because they describe the highest quality areas of the Hudson and its tidal tributaries, outlining fish and wildlife values and activities that may have large impacts on the habitats. Additional areas of known importance for rare plants, rare animals, and significant natural communities are shown in the Biodiversity tab.  </font></p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><br /></p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><font size='3'>Local land-use decisions and management of properties along the Hudson have a vital role in the future of Hudson shorelines and estuarine habitats. </font><span style='font-size: medium; line-height: 1.38462;'>Furthermore, global sea level rise will fundamentally affect the estuary in the coming decades. Natural shorelines will potentially allow for the migration of tidal and shoreline habitats as sea level rises and mitigate damage to property and infrastructure.</span><br /></p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><span style='font-size: medium; line-height: 1.38462;'><br /></span></p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><span style='color: rgb(77, 77, 77); font-size: medium; line-height: 22px; background-color: rgb(255, 255, 255);'>Note: </span><span style='font-size: medium; line-height: 22.1538px;'>New York State jurisdictional tidal wetlands (south of the Tappan Zee Bridge) can be identified using the State Environmental Quality Review (SEQR) Environmental Assessment Form Mapper</span><font face='Calibri, sans-serif' size='4'><span style='line-height: 24.9231px;'>.</span></font><span style='font-size: medium; line-height: 1.38462;'><br /></span></p><span style='color: rgb(68, 68, 68); font-size: 11pt; font-family: Calibri, sans-serif;'> <br /></span><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><br /></p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><font size='3'>Related links:</font></p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><a href='http://www.dec.ny.gov/lands/87648.html' style='font-size: 14.4px;' target='_blank'>Submerged Aquatic Vegetation</a><br /></p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><a href='http://www.dec.ny.gov/lands/74069.html' target='_blank'>Fish of the Hudson River Estuary</a><br /></p><font size='3'><a href='http://www.dos.ny.gov/opd/programs/consistency/scfwhabitats.html' target='_blank'>NYS DOS Significant Coastal Fish and Wildlife Habitats</a><br /></font><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif;'><font size='3'><a href='https://www.hrnerr.org/hudson-river-sustainable-shorelines/' target='_blank'>Sustainable Shorelines</a><br /></font></p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif;'><a href='http://www.dec.ny.gov/eafmapper/' target='_blank'><font size='3'>SEQR EAF Mapper</font></a><br /></p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><br /></p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><span style='font-size: medium; line-height: 22.1538px;'>Data sources:</span><font size='3'><br /></font></p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><a href='https://gis.ny.gov/gisdata/inventories/details.cfm?DSID=1210' target='_blank'>Tidal wetlands</a><font size='2'><br /></font></p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><a href='https://gis.ny.gov/gisdata/inventories/details.cfm?DSID=1209' target='_blank'>Documented SAV</a><font size='2'><br /></font></p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><a href='http://nynhp.org/FBP' target='_blank'>Migratory fish runs</a><font size='2'><br /></font></p><p style='margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><a href='https://gis.ny.gov/gisdata/inventories/details.cfm?DSID=318' target='_blank'>Significant Coastal Fish and Wildlife Habitats</a><br /></p><div><br /></div>
+                  </div>
+                </div>
+                </p>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                
+
+                <div id="f_SEM_0_8">
+                  <label>Please select whether the above ArcGIS Online item is a good search result of the above query:</label>
+
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_8" type="radio" value="3">  Pefect </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_8" type="radio" value="2">  Good </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_8" type="radio" value="1">  Some Relevance</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_8" type="radio" value="0">  Fair </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_8" type="radio" value="-1">  Bad </label>
+                  </div>        
+                </div>
+              </div>
+            </div>
+        
+            <div class="panel panel-default">
+              <div class="panel-body" id="4e713850696d4f02b1b6f79440597f3e" ><label>Item 3. <a target="_blank" href="http://www.arcgis.com/home/item.html?id=4e713850696d4f02b1b6f79440597f3e"><span class="bold" style="width:30px;">[Open ArcGIS Online Item]</span></a></label>
+                
+                <div id="4e713850696d4f02b1b6f79440597f3e_info" class="row well" style="padding:0px;margin:0px -5px 5px -5px">
+                  <div style="" class="col-md-4">
+                    <img class="item-logo" style="display: block;padding-left:0px;" src="http://www.arcgis.com/sharing/rest/content/items/4e713850696d4f02b1b6f79440597f3e/info/thumbnail/ago_downloaded.png">
+                  </div>
+                  <div style="overflow:hidden;padding-right:0px;" class="col-md-8">
+                    <div class="row">
+                      <p class="col-12"><b>Streams</b></p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Type:</b></p>
+                      <p class="col-9">Web Map</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Tags:</b></p>
+                      <p class="col-9">watershed; stream; trout; floodplain</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Snippet:</b></p>
+                      <p class="col-9">Streams and watersheds in the Hudson River Estuary Watershed</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Desription:</b></p>
+                      <p class="col-9">
+                <div class="col-12">
+                  <button type="button" class="collapsible">Click to see description</button>
+                  <div class="content">
+                    <font size='3' style='color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif;'>This map depicts several characteristics of streams and their <b>watersheds</b>, the area of land draining to a stream, river, lake, or other waterbody. Data shown include: HUC10 and HUC12 watershed boundaries and statistics for each on percent impervious surfaces and forest cover, DEC stream classifications and FEMA flood hazard maps.</font><div style='margin: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><font size='3'><br /></font></div><div style='margin: 0px; padding: 0px; color: rgb(68, 68, 68); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14.4px;'><font size='3'>Watersheds are divided by high points on the land, such as ridges, mountains, and hills, and may be made up of many smaller drainage areas, or subwatersheds. Healthy streams and watersheds with a high percentage of forest cover will recharge groundwater, reduce flood impacts, minimize public infrastructure and water treatment costs, and be more resilient to climate change, in addition to providing critical wildlife habitat and recreational opportunities like fishing and kayaking. Existing maps of watershed features can help municipalities begin to identify important water resources and the surrounding upland areas of influence on water quality and aquatic habitat.</font><font size='3'><br /><br />Well-shaded, cool to coldwater streams with clean gravel substrate are able to support native fish such as brook trout that are sensitive to warmer temperatures and sedimentation. Known <b>trout streams</b> shown here are from the trout and trout spawning designations in NYS Department of Environmental Conservation’s water quality classification data. Some streams support migratory routes for fish traveling between ocean and freshwater habitats, such as American eel and river herring, shown in the Estuary tab. In-stream barriers, such as <b>dams</b>and poorly designed and installed<b>culverts</b>, can isolate and severely limit the range of aquatic species, decrease available habitat, increase local flooding, and lower water quality.</font><font size='3'><br /><br />In addition to in-stream habitats, such as riffles, runs, and pools, streams are inherently interconnected with the upland habitats of their streamside riparian areas and <b>floodplains</b>, low-lying areas that are inundated during heavy rainfall or snowmelt events. Forested riparian corridors and floodplains minimize runoff and help to slow and store floodwaters. The Federal Emergency Management Agency has mapped approximate floodplains based on flood frequency according to the extent of land expected to have a 1% or greater chance of being inundated in any given year, often referred to as the “100-year flood.” It is important to note that some flood-prone areas may not appear on designated floodplain maps, and floodplain designations may change over time as more information becomes available. Note that FEMA floodplain maps shown here may be incomplete for certain areas, including Columbia and Rensselaer counties.</font><font size='3'><br /><br />As development occurs in a watershed, pavement and other <b>impervious surfaces</b> (e.g., roofs) increase runoff volume and velocity, leading to more frequent and damaging floods. Stormwater runoff often carries chemicals, sediment, and other contaminants into streams and waterbodies, threatening water quality and degrading habitat value. Preserving <b>forest cover</b> and minimizing impervious surfaces in the watershed, especially in floodplains and riparian corridors, is ever more important as uplands are developed and as the frequency and magnitude of flood events increase with climate change. The average impervious surface and forest cover </font><font size='3'>are displayed in the popup boxes for each watershed.</font><div style='margin: 0px; padding: 0px;'><font size='3'><br />Related links:</font><font size='3'><br /></font><a href='http://www.dec.ny.gov/lands/5098.html' target='_blank'>Clean Water for the Hudson River Estuary</a><font size='3'><br /></font><a href='http://www.dec.ny.gov/lands/99489.html' target='_blank'>Aquatic Connectivity and Barrier Removal</a><font size='2'><br /></font><a href='https://msc.fema.gov/portal/resources/productsandtools' target='_blank'>FEMA Flood Map Service Center Products and Tools</a><font size='2'><br /></font><div style='margin: 0px; padding: 0px;'><br /></div><div style='margin: 0px; padding: 0px;'><font size='3'>Data sources:</font></div><div style='margin: 0px; padding: 0px;'><a href='https://gdg.sc.egov.usda.gov/' target='_blank'>National Hydrography Dataset watershed boundaries</a><br /></div><div style='margin: 0px; padding: 0px;'><a href='http://www.mrlc.gov/' target='_blank'>National Land Cover Dataset impervious area and forest cover data</a><br /></div><div style='margin: 0px; padding: 0px;'><a href='https://gis.ny.gov/gisdata/inventories/details.cfm?DSID=1118' target='_blank'>NYSDEC Water Quality Classifications</a><br /></div><div style='margin: 0px; padding: 0px;'><br /></div></div></div>
+                  </div>
+                </div>
+                </p>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                
+
+                <div id="f_SEM_0_6">
+                  <label>Please select whether the above ArcGIS Online item is a good search result of the above query:</label>
+
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_6" type="radio" value="3">  Pefect </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_6" type="radio" value="2">  Good </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_6" type="radio" value="1">  Some Relevance</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_6" type="radio" value="0">  Fair </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_6" type="radio" value="-1">  Bad </label>
+                  </div>        
+                </div>
+              </div>
+            </div>
+        
+            <div class="panel panel-default">
+              <div class="panel-body" id="7ab4a97b91194a57bad9c772660f7a3a" ><label>Item 4. <a target="_blank" href="http://www.arcgis.com/home/item.html?id=7ab4a97b91194a57bad9c772660f7a3a"><span class="bold" style="width:30px;">[Open ArcGIS Online Item]</span></a></label>
+                
+                <div id="7ab4a97b91194a57bad9c772660f7a3a_info" class="row well" style="padding:0px;margin:0px -5px 5px -5px">
+                  <div style="" class="col-md-4">
+                    <img class="item-logo" style="display: block;padding-left:0px;" src="http://www.arcgis.com/sharing/rest/content/items/7ab4a97b91194a57bad9c772660f7a3a/info/thumbnail/ago_downloaded.png">
+                  </div>
+                  <div style="overflow:hidden;padding-right:0px;" class="col-md-8">
+                    <div class="row">
+                      <p class="col-12"><b>New York State areas of historic and natural interest-Copy</b></p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Type:</b></p>
+                      <p class="col-9">Web Map</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Tags:</b></p>
+                      <p class="col-9">Natural areas; heritage; historic; birds; new york state</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Snippet:</b></p>
+                      <p class="col-9">Identifies scenic areas of significance along the Hudson River and Long Island, bird conservation areas, and Heritage areas and corridors in New York State.</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Desription:</b></p>
+                      <p class="col-9">None</p>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                
+
+                <div id="f_SEM_0_10">
+                  <label>Please select whether the above ArcGIS Online item is a good search result of the above query:</label>
+
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_10" type="radio" value="3">  Pefect </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_10" type="radio" value="2">  Good </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_10" type="radio" value="1">  Some Relevance</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_10" type="radio" value="0">  Fair </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_10" type="radio" value="-1">  Bad </label>
+                  </div>        
+                </div>
+              </div>
+            </div>
+        
+            <div class="panel panel-default">
+              <div class="panel-body" id="c33651a4c89946d9affb10c0119ff8d4" ><label>Item 5. <a target="_blank" href="http://www.arcgis.com/home/item.html?id=c33651a4c89946d9affb10c0119ff8d4"><span class="bold" style="width:30px;">[Open ArcGIS Online Item]</span></a></label>
+                
+                <div id="c33651a4c89946d9affb10c0119ff8d4_info" class="row well" style="padding:0px;margin:0px -5px 5px -5px">
+                  <div style="" class="col-md-4">
+                    <img class="item-logo" style="display: block;padding-left:0px;" src="http://www.arcgis.com/sharing/rest/content/items/c33651a4c89946d9affb10c0119ff8d4/info/thumbnail/ago_downloaded.png">
+                  </div>
+                  <div style="overflow:hidden;padding-right:0px;" class="col-md-8">
+                    <div class="row">
+                      <p class="col-12"><b>NY: NHP Natural Communities</b></p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Type:</b></p>
+                      <p class="col-9">Web Map</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Tags:</b></p>
+                      <p class="col-9">LandScope; Ecosystems; NY</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Snippet:</b></p>
+                      <p class="col-9">This layer's features represent element occurrences of significant natural communities (ecological communities), as recorded in the New York Natural Heritage Program's Biodiversity Database (Biotics).</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Desription:</b></p>
+                      <p class="col-9">
+                <div class="col-12">
+                  <button type="button" class="collapsible">Click to see description</button>
+                  <div class="content">
+                    Features represent element occurrences of significant natural communities (ecological communities), as recorded in the New York Natural Heritage Program's Biodiversity Database (Biotics). An element occurrence is one natural community type at one location. Examples of community types include deep emergent marsh, red maple-hardwood swamp, dwarf shrub bog, hemlock-northern hardwood forest, and tidal creek. Natural community occurrences in this dataset are considered significant from a statewide perspective. NY Natural Heritage documents all occurrences of community types that are rare in New York State. For more common community types, NY Natural Heritage documents occurrences where the community at that location is ranked as being of excellent or good quality, by meeting specific, documented criteria for size, undisturbed and intact condition, and quality of the surrounding landscape.<br /><br />A natural community is an assemblage of interacting plant and animal populations that share a common environment; the particular assemblage of plant and animal species occurs across the landscape in areas with similar environmental conditions. Significant natural communities are rare or high-quality wetlands, forests, grasslands, ponds, streams, and other types of habitats, ecosystems, and natural areas. NY Natural Heritage tracks locations of significant natural communities because they serve as habitat for a wide range of plants and animals, both rare and common; and because community occurrences in good condition support intact ecological processes and provide ecological value and services.<br />
+                  </div>
+                </div>
+                </p>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                
+
+                <div id="f_SEM_0_3">
+                  <label>Please select whether the above ArcGIS Online item is a good search result of the above query:</label>
+
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_3" type="radio" value="3">  Pefect </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_3" type="radio" value="2">  Good </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_3" type="radio" value="1">  Some Relevance</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_3" type="radio" value="0">  Fair </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_3" type="radio" value="-1">  Bad </label>
+                  </div>        
+                </div>
+              </div>
+            </div>
+        
+            <div class="panel panel-default">
+              <div class="panel-body" id="e87c08c9d96d415a9324959c84a6c98b" ><label>Item 6. <a target="_blank" href="http://www.arcgis.com/home/item.html?id=e87c08c9d96d415a9324959c84a6c98b"><span class="bold" style="width:30px;">[Open ArcGIS Online Item]</span></a></label>
+                
+                <div id="e87c08c9d96d415a9324959c84a6c98b_info" class="row well" style="padding:0px;margin:0px -5px 5px -5px">
+                  <div style="" class="col-md-4">
+                    <img class="item-logo" style="display: block;padding-left:0px;" src="http://www.arcgis.com/sharing/rest/content/items/e87c08c9d96d415a9324959c84a6c98b/info/thumbnail/ago_downloaded.png">
+                  </div>
+                  <div style="overflow:hidden;padding-right:0px;" class="col-md-8">
+                    <div class="row">
+                      <p class="col-12"><b>Source Water Collaboratives-Copy3</b></p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Type:</b></p>
+                      <p class="col-9">Web Map</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Tags:</b></p>
+                      <p class="col-9">Source Water Collaboratives; Source Water Protection; Drinking Water</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Snippet:</b></p>
+                      <p class="col-9">Current local and state source water collaboratives</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Desription:</b></p>
+                      <p class="col-9">None</p>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                
+
+                <div id="f_SEM_0_4">
+                  <label>Please select whether the above ArcGIS Online item is a good search result of the above query:</label>
+
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_4" type="radio" value="3">  Pefect </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_4" type="radio" value="2">  Good </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_4" type="radio" value="1">  Some Relevance</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_4" type="radio" value="0">  Fair </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_4" type="radio" value="-1">  Bad </label>
+                  </div>        
+                </div>
+              </div>
+            </div>
+        
+            <div class="panel panel-default">
+              <div class="panel-body" id="f45853323e3b42dd96ebcab0f3420da3" ><label>Item 7. <a target="_blank" href="http://www.arcgis.com/home/item.html?id=f45853323e3b42dd96ebcab0f3420da3"><span class="bold" style="width:30px;">[Open ArcGIS Online Item]</span></a></label>
+                
+                <div id="f45853323e3b42dd96ebcab0f3420da3_info" class="row well" style="padding:0px;margin:0px -5px 5px -5px">
+                  <div style="" class="col-md-4">
+                    <img class="item-logo" style="display: block;padding-left:0px;" src="http://www.arcgis.com/sharing/rest/content/items/f45853323e3b42dd96ebcab0f3420da3/info/thumbnail/ago_downloaded.png">
+                  </div>
+                  <div style="overflow:hidden;padding-right:0px;" class="col-md-8">
+                    <div class="row">
+                      <p class="col-12"><b>[Version 2] Trout Unlimited's CCC Water Quality Monitoring Effort</b></p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Type:</b></p>
+                      <p class="col-9">Web Map</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Tags:</b></p>
+                      <p class="col-9">Trout Unlimited; TU; water quality; PA; Pennsylvania; FracTracker</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Snippet:</b></p>
+                      <p class="col-9">Pennsylvania watersheds in which TU is conducting water quality monitoring</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Desription:</b></p>
+                      <p class="col-9">
+                <div class="col-12">
+                  <button type="button" class="collapsible">Click to see description</button>
+                  <div class="content">
+                    Several organizations in Pennsylvania are conducting water quality testing the Marcellus Shale region.  One such group is Trout Unlimited (TU).  Per TU's Pennsylvania Marcellus Shale Field Organizer Mitchell Blake:<div><br /></div><div>Trout Unlimited’s Coldwater Conservation Corps (CCC) is a network of volunteer stream stewards who monitor water quality throughout the Commonwealth of Pennsylvania.  With over 350 members trained, hailing from almost every Pennsylvania Trout Unlimited chapter, the CCC volunteers focus on achieving early detection of pollution events during oil and gas drilling and production activities and collecting a baseline inventory of data on important coldwater fisheries.  Using a scientific tool that focuses on trout populations and forecasted Marcellus development, CCC volunteers strategically choose their monitoring locations within their chapter and report and map their data using Trout Unlimited’s water quality monitoring database.  Protection of coldwater fisheries is an integral part of Trout Unlimited’s mission and more than any other segment of society, it is fisherman who spend considerable time on these streams, and thus are well positioned to watch over them.</div><div><br /></div><div>In the coming months, there are plans to share the water quality data with those who are interested.  </div><div><br /></div><div>Name:  Location of Unconventional Wells<span style='white-space:pre'> </span></div><div>Source:  FracTracker Alliance, based on PADEP data</div><div>Date:  1/4/2013</div><div>Notes:  This layer was created by forming a quarter mile buffer around each well.  It shows location data only.  For more detail on unconventional wells in Pennsylvania, see the <a href='http://maps.fractracker.org/?webmap=86932335aa684ec18a3362969f229c9c' target='_self'>PA Shale Gas Viewer</a>.</div><div><br /></div><div>Name:  Trout Unlimited's CCC Water Quality Monitoring Effort</div><div>Source:  Trout Unlimited</div><div>Date:  2/1/2013</div><div>Notes:  Trout Unlimited is conducting water quality research in 99 watersheds at the 12 digit hydrologic unit code (HUC 12) level of detail, highlighted here in green.</div><div>  </div><div>Name:  PA Watersheds - Large</div><div>Source:  <a href='http://datagateway.nrcs.usda.gov/' style='line-height: 1.3846153846153846;' target='_self'>USDA</a></div><div>Date:  2008</div><div>Notes:  Watershed boundaries at the eight digit hydrologic unit code (HUC 08) level of detail.  This has been altered from the original USDA download by clipping the boundaries of the watershed to the outline of Pennsylvania.  </div>
+                  </div>
+                </div>
+                </p>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                
+
+                <div id="f_SEM_0_7">
+                  <label>Please select whether the above ArcGIS Online item is a good search result of the above query:</label>
+
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_7" type="radio" value="3">  Pefect </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_7" type="radio" value="2">  Good </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_7" type="radio" value="1">  Some Relevance</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_7" type="radio" value="0">  Fair </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_7" type="radio" value="-1">  Bad </label>
+                  </div>        
+                </div>
+              </div>
+            </div>
+        
+            <div class="panel panel-default">
+              <div class="panel-body" id="b882f6afcbd144f0ae1221e23ad84df6" ><label>Item 8. <a target="_blank" href="http://www.arcgis.com/home/item.html?id=b882f6afcbd144f0ae1221e23ad84df6"><span class="bold" style="width:30px;">[Open ArcGIS Online Item]</span></a></label>
+                
+                <div id="b882f6afcbd144f0ae1221e23ad84df6_info" class="row well" style="padding:0px;margin:0px -5px 5px -5px">
+                  <div style="" class="col-md-4">
+                    <img class="item-logo" style="display: block;padding-left:0px;" src="http://www.arcgis.com/sharing/rest/content/items/b882f6afcbd144f0ae1221e23ad84df6/info/thumbnail/ago_downloaded.png">
+                  </div>
+                  <div style="overflow:hidden;padding-right:0px;" class="col-md-8">
+                    <div class="row">
+                      <p class="col-12"><b>Registered Water Withdrawals in New York State</b></p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Type:</b></p>
+                      <p class="col-9">Web Map</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Tags:</b></p>
+                      <p class="col-9">water withdrawal; use; NYS; New York</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Snippet:</b></p>
+                      <p class="col-9">This map shows the registered water withdrawals in New York State. Data were obtained by a Freedom of Information Law request from New York State DEC in May, 2013</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Desription:</b></p>
+                      <p class="col-9">
+                <div class="col-12">
+                  <button type="button" class="collapsible">Click to see description</button>
+                  <div class="content">
+                    <span style='color: rgb(34, 34, 34); font-family: arial, sans-serif; line-height: normal; background-color: rgb(255, 255, 255);'>This is a map of registered water users in New York State in 2013 compiled from data provided by the NYS DEC. Only the very largest of these water users are required to apply this year for water withdrawal permits under New York's new water withdrawal permitting regulations, 6 NYCRR Parts 601 and 621,</span><a href='http://www.dec.ny.gov/regulations/78258.html' style='color: rgb(17, 85, 204); font-family: arial, sans-serif; line-height: normal; background-color: rgb(255, 255, 255);' target='_blank'>http://www.dec.ny.gov/regulations/78258.html</a><span style='color: rgb(34, 34, 34); font-family: arial, sans-serif; line-height: normal; background-color: rgb(255, 255, 255);'>,  which became effective April 1, 2013.   Under the new regulations, the largest users are to be issued permits first.  Section 601.7(2) of the regulations lists the dates by which a complete application for an initial permit must be submitted. These dates are shown in Table 1. Users who are required under the regulations to apply in 2013 are &quot;systems that withdraw or are designed to withdraw a volume of 100 million gallons per day (mgd) or more,&quot; unless exempt from the permitting requirements.  Registered users withdrawing 100 mgd or more are listed in Table 2. Their applications were due June 1st, unless they are exempt from the permit requirements. Exemptions are listed in Section 601.9 of the regulations.  The staggered implementation schedule being used by the DEC makes it virtually impossible for the DEC to weigh competing usage requirements as they issue withdrawal permits. The schedule as designed gives priority for permits to the state's largest water users first, in descending order.</span><div><font color='#222222' face='arial, sans-serif'><span style='line-height: normal;'><br /></span></font><div style='margin: 0px; padding: 0px; font-family: Verdana, Helvetica, sans-serif; font-size: 12px; line-height: 18px; background-color: rgb(255, 255, 255);'><font color='#000000' face='Arial'><div style='margin: 0px; padding: 0px;'><font color='#000000' face='Arial'><b>Table 1. Dates by which Application for Initial Permit Must Be Completed</b></font></div><div style='margin: 0px; padding: 0px;'><br /><table border='0' cellpadding='0' cellspacing='0' style='font-size: 13px; font-family: Verdana;' width='100%'><tbody><tr valign='top'><td style='margin: 0px; padding: 0px;' width='20%'><font color='#000000' face='Arial'>June 1, 2013</font></td><td style='margin: 0px; padding: 0px;'><font color='#000000' face='Arial'>Systems that withdraw or are designed to withdraw a volume of 100 million gallons per day (mgd) or more</font></td></tr><tr valign='top'><td style='margin: 0px; padding: 0px;'><font color='#000000' face='Arial'>Feb. 15, 2014</font></td><td style='margin: 0px; padding: 0px;'><font color='#000000' face='Arial'>Systems that withdraw or are designed to withdraw a volume equal to or greater than 10 mgd but less than 100 mgd</font></td></tr><tr valign='top'><td style='margin: 0px; padding: 0px;'><font color='#000000' face='Arial'>Feb. 15, 2015</font></td><td style='margin: 0px; padding: 0px;'><font color='#000000' face='Arial'>Systems that withdraw or are designed to withdraw a volume equal to or greater than 2 mgd but less than 10 mgd</font></td></tr><tr valign='top'><td style='margin: 0px; padding: 0px;'><font color='#000000' face='Arial'>Feb. 15, 2016</font></td><td style='margin: 0px; padding: 0px;'><font color='#000000' face='Arial'>Systems that withdraw or are designed to withdraw a volume equal to or greater than 0.5 mgd but less than 2 mgd</font></td></tr><tr valign='top'><td style='margin: 0px; padding: 0px;'><font color='#000000' face='Arial'>Feb. 15, 2017</font></td><td style='margin: 0px; padding: 0px;'><font color='#000000' face='Arial'>Systems that withdraw or are designed to withdraw a volume equal to or greater than 0.1 but less than 0.5 mgd<br /><br /></font></td></tr></tbody></table></div><div style='margin: 0px; padding: 0px;'><br /></div><div style='margin: 0px; padding: 0px;'><b>Table 2. Water Users with Maximum Usage over 100 MGD</b><div style='margin: 0px; padding: 0px;'><br /></div><table border='0' cellpadding='0' cellspacing='0' style='font-size: 13px; color: rgb(34, 34, 34);' width='100%'><tbody><tr><td style='margin: 0px; padding: 0px;' valign='top'><b>Facility Name</b></td><td style='margin: 0px; padding: 0px;' valign='top'><b>Town/City</b></td><td style='margin: 0px; padding: 0px;' valign='top'><b>County</b></td><td style='margin: 0px; padding: 0px;' valign='top'><b>Average</b></td><td style='margin: 0px; padding: 0px;' valign='top'><b>Units</b></td><td align='right' style='margin: 0px; padding: 0px;' valign='top'><b>Max.</b></td><td style='margin: 0px; padding: 0px;' valign='top'><b>Units</b></td></tr><tr><td style='margin: 0px; padding: 0px;' valign='top'>St. Lawrence/ FDR Power Project</td><td style='margin: 0px; padding: 0px;' valign='top'>Massena</td><td style='margin: 0px; padding: 0px;' valign='top'>St.Lawrence</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>79278.00</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>108686.00</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td></tr><tr><td style='margin: 0px; padding: 0px;' valign='top'>Niagara Power Project</td><td style='margin: 0px; padding: 0px;' valign='top'>Lewiston</td><td style='margin: 0px; padding: 0px;' valign='top'>Niagara</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>47463.00</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>62164.00</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td></tr><tr><td style='margin: 0px; padding: 0px;' valign='top'>Indian Point 2&amp;3 LLCs</td><td style='margin: 0px; padding: 0px;' valign='top'>Cortlandt</td><td style='margin: 0px; padding: 0px;' valign='top'>Westchester</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>2024.00</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>2489.00</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td></tr><tr><td style='margin: 0px; padding: 0px;' valign='top'>New York City DEP</td><td style='margin: 0px; padding: 0px;' valign='top'>Neversink</td><td style='margin: 0px; padding: 0px;' valign='top'>Sullivan</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>1078.00</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>1418.00</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td></tr><tr><td style='margin: 0px; padding: 0px;' valign='top'>James A. Fitzpatrick Nuclear Power Plant</td><td style='margin: 0px; padding: 0px;' valign='top'>Scriba</td><td style='margin: 0px; padding: 0px;' valign='top'>Oswego</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>543.00</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>596.00</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td></tr><tr><td style='margin: 0px; padding: 0px;' valign='top'>Ravenswood Generating Station</td><td style='margin: 0px; padding: 0px;' valign='top'>Queens</td><td style='margin: 0px; padding: 0px;' valign='top'>Queens</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>512.90</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>1390.00</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td></tr><tr><td style='margin: 0px; padding: 0px;' valign='top'>Arthur Kill Generating Station</td><td style='margin: 0px; padding: 0px;' valign='top'>Richmond</td><td style='margin: 0px; padding: 0px;' valign='top'>Richmond</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>480.00</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>712.80</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td></tr><tr><td style='margin: 0px; padding: 0px;' valign='top'>Astoria Generating Station</td><td style='margin: 0px; padding: 0px;' valign='top'>Queens</td><td style='margin: 0px; padding: 0px;' valign='top'>Queens</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>455.60</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>723.70</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td></tr><tr><td style='margin: 0px; padding: 0px;' valign='top'>RE Ginna Nuclear Power Plant</td><td style='margin: 0px; padding: 0px;' valign='top'>Ontario</td><td style='margin: 0px; padding: 0px;' valign='top'>Wayne</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>427.00</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>511.00</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td></tr><tr><td style='margin: 0px; padding: 0px;' valign='top'>Nine Mile Point Nuclear Station</td><td style='margin: 0px; padding: 0px;' valign='top'>Scriba</td><td style='margin: 0px; padding: 0px;' valign='top'>Oswego</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>401.10</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>457.10</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td></tr><tr><td style='margin: 0px; padding: 0px;' valign='top'>Roseton Generating Station</td><td style='margin: 0px; padding: 0px;' valign='top'>Newburgh</td><td style='margin: 0px; padding: 0px;' valign='top'>Orange</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>340.54</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>794.40</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td></tr><tr><td style='margin: 0px; padding: 0px;' valign='top'>Dunkirk Generating Station</td><td style='margin: 0px; padding: 0px;' valign='top'>Dunkirk</td><td style='margin: 0px; padding: 0px;' valign='top'>Chautauqua</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>304.00</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'><u></u> <u></u></td><td align='right' style='margin: 0px; padding: 0px;' valign='top'><u></u> <u></u></td></tr><tr><td style='margin: 0px; padding: 0px;' valign='top'>Danskammer Generating</td><td style='margin: 0px; padding: 0px;' valign='top'>Newburgh</td><td style='margin: 0px; padding: 0px;' valign='top'>Orange</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>278.80</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>455.04</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td></tr><tr><td style='margin: 0px; padding: 0px;' valign='top'>East River Generating Station</td><td style='margin: 0px; padding: 0px;' valign='top'>New York</td><td style='margin: 0px; padding: 0px;' valign='top'>New York</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>264.10</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>371.80</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td></tr><tr><td style='margin: 0px; padding: 0px;' valign='top'>AES Somerset</td><td style='margin: 0px; padding: 0px;' valign='top'>Somerset</td><td style='margin: 0px; padding: 0px;' valign='top'>Niagara</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>239.00</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>274.00</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td></tr><tr><td style='margin: 0px; padding: 0px;' valign='top'>AES Cayuga</td><td style='margin: 0px; padding: 0px;' valign='top'>Lansing</td><td style='margin: 0px; padding: 0px;' valign='top'>Tompkins</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>214.12</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>243.36</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td></tr><tr><td style='margin: 0px; padding: 0px;' valign='top'>Huntley Generating Station</td><td style='margin: 0px; padding: 0px;' valign='top'>Tonawanda</td><td style='margin: 0px; padding: 0px;' valign='top'>Erie</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>200.00</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>406.00</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td></tr><tr><td style='margin: 0px; padding: 0px;' valign='top'>Oswego Harbor Power</td><td style='margin: 0px; padding: 0px;' valign='top'>Oswego</td><td style='margin: 0px; padding: 0px;' valign='top'>Oswego</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>167.70</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>364.21</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td></tr><tr><td style='margin: 0px; padding: 0px;' valign='top'>Genon Bowline</td><td style='margin: 0px; padding: 0px;' valign='top'>Haverstraw</td><td style='margin: 0px; padding: 0px;' valign='top'>Rockland</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>74.94</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>989.29</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td></tr><tr><td style='margin: 0px; padding: 0px;' valign='top'>Monroe County Water Authority-Shoremont</td><td style='margin: 0px; padding: 0px;' valign='top'>Greece</td><td style='margin: 0px; padding: 0px;' valign='top'>Monroe</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>55.40</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>109.00</td><td align='right' style='margin: 0px; padding: 0px;' valign='top'>MGD<br /><br /></td></tr></tbody></table></div></font></div><div><table border='0' cellpadding='0' cellspacing='0' style='font-size: 13px; background-color: rgb(255, 255, 255);' width='100%'><tbody><tr valign='top'><td style='margin: 0px;' width='20%'><br /></td><td style='margin: 0px;'><br /></td></tr><tr valign='top'><td style='margin: 0px;'><br /></td><td style='margin: 0px;'><br /></td></tr><tr valign='top'><td style='margin: 0px;'><br /></td><td style='margin: 0px;'><br /></td></tr><tr valign='top'><td style='margin: 0px;'><br /></td><td style='margin: 0px;'><br /></td></tr><tr valign='top'><td style='margin: 0px;'><br /></td><td style='margin: 0px;'><br /></td></tr></tbody></table></div></div>
+                  </div>
+                </div>
+                </p>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                
+
+                <div id="f_SEM_0_2">
+                  <label>Please select whether the above ArcGIS Online item is a good search result of the above query:</label>
+
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_2" type="radio" value="3">  Pefect </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_2" type="radio" value="2">  Good </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_2" type="radio" value="1">  Some Relevance</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_2" type="radio" value="0">  Fair </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_2" type="radio" value="-1">  Bad </label>
+                  </div>        
+                </div>
+              </div>
+            </div>
+        
+            <div class="panel panel-default">
+              <div class="panel-body" id="77eb83ad79734870826b69955deccb03" ><label>Item 9. <a target="_blank" href="http://www.arcgis.com/home/item.html?id=77eb83ad79734870826b69955deccb03"><span class="bold" style="width:30px;">[Open ArcGIS Online Item]</span></a></label>
+                
+                <div id="77eb83ad79734870826b69955deccb03_info" class="row well" style="padding:0px;margin:0px -5px 5px -5px">
+                  <div style="" class="col-md-4">
+                    <img class="item-logo" style="display: block;padding-left:0px;" src="http://www.arcgis.com/sharing/rest/content/items/77eb83ad79734870826b69955deccb03/info/thumbnail/ago_downloaded.png">
+                  </div>
+                  <div style="overflow:hidden;padding-right:0px;" class="col-md-8">
+                    <div class="row">
+                      <p class="col-12"><b>Rockland County- Stormwater & Water Quality Interactive Map</b></p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Type:</b></p>
+                      <p class="col-9">Web Map</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Tags:</b></p>
+                      <p class="col-9">NYSDEC; Stormwater; MS4; EPA; SPDES; Water Quality; Rockland County</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Snippet:</b></p>
+                      <p class="col-9">Stormwater and Water Quality Interactive Map.  An accumulation of available data pertaining to stormwater and water quality in Rockland County.</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Desription:</b></p>
+                      <p class="col-9">
+                <div class="col-12">
+                  <button type="button" class="collapsible">Click to see description</button>
+                  <div class="content">
+                    <p><font color='#000000' size='3'></font></p><span style='color: rgb(76, 76, 76); font-family: &quot;Helvetica&quot;,sans-serif; font-size: 11.5pt; mso-ansi-language: EN;'><p><span style='color: rgb(76, 76, 76); font-family: &quot;Helvetica&quot;,sans-serif; font-size: 11.5pt; mso-ansi-language: EN;'><font size='4'><b><u>Stormwater &amp; Water Quality interactive map
+for Rockland County</u></b></font> based on a collection of available data from the
+sources supplied in the data layers.  </span></p><p><font color='#000000' face='Times New Roman' size='3'>
+
+</font><span style='color: rgb(76, 76, 76); font-family: &quot;Helvetica&quot;,sans-serif; font-size: 11.5pt; mso-ansi-language: EN;'><u></u><a href='http://rocklandcce.org/' target='_blank'>Cornell Cooperative Extension, Rockland County (CCE)</a> puts
+knowledge to work in pursuit of economic vitality, ecological sustainability
+and social well-being.<span style='mso-spacerun: yes;'>  </span><a href='http://rocklandcce.org/stormwater-consortium' target='_blank'>The StormwaterConsortium of Rockland County (SCRC)</a><u></u> was formed to foster the cooperation and
+exchange of information, and to address issues of mutual concern related to
+compliance with stormwater regulations. One measure of stormwater compliance is
+outreach and education, which is provided to them through CCE.<span style='mso-spacerun: yes;'>  </span></span></p><p><span style='color: rgb(76, 76, 76); font-family: &quot;Helvetica&quot;,sans-serif; font-size: 11.5pt; mso-ansi-language: EN;'><span style='mso-spacerun: yes;'></span></span></p><p><font color='#000000' face='Times New Roman' size='3'>
+
+</font><span style='color: rgb(76, 76, 76); font-family: &quot;Helvetica&quot;,sans-serif; font-size: 11.5pt; mso-ansi-language: EN;'><font size='2'><i>Cornell Cooperative Extension is an
+employer and educator recognized for valuing AA/EEO, Protected Veterans, and
+Individuals with Disabilities and provides equal program and employment
+opportunities.</i></font></span></p><p><i><font color='#000000' face='Times New Roman' size='3'>
+
+</font><span style='color: rgb(76, 76, 76); font-family: &quot;Helvetica&quot;,sans-serif; font-size: 11.5pt; mso-ansi-language: EN;'><font size='2'></font></span></i></p><p><i><span style='color: rgb(76, 76, 76); font-family: &quot;Helvetica&quot;,sans-serif; font-size: 11.5pt; mso-ansi-language: EN;'><font size='2'>The information contained in this website
+is for general information purposes only. The information is provided by Cornell
+Cooperative Extension and while we endeavour to keep the information up to date
+and correct, we make no representations or warranties of any kind, express or
+implied, about the completeness, accuracy, reliability, suitability or
+availability with respect to the website or the information, products,
+services, or related graphics contained on the website for any purpose. Any
+reliance you place on such information is therefore strictly at your own risk. In
+no event will we be liable for any loss or damage including without limitation,
+indirect or consequential loss or damage, or any loss or damage whatsoever
+arising from loss of data or profits arising out of, or in connection with, the
+use of this website. Through this website you are able to link to other
+websites which are not under the control of Cornell Cooperative Extension. We
+have no control over the nature, content and availability of those sites. The
+inclusion of any links does not necessarily imply a recommendation or endorse
+the views expressed within them.<span style='mso-spacerun: yes;'>  </span>Every
+effort is made to keep the website up and running smoothly. However, Cornell
+Cooperative Extension takes no responsibility for, and will not be liable for,
+the website being temporarily unavailable due to technical issues beyond our
+control.</font></span></i></p></span>
+                  </div>
+                </div>
+                </p>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                
+
+                <div id="f_SEM_0_5">
+                  <label>Please select whether the above ArcGIS Online item is a good search result of the above query:</label>
+
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_5" type="radio" value="3">  Pefect </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_5" type="radio" value="2">  Good </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_5" type="radio" value="1">  Some Relevance</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_5" type="radio" value="0">  Fair </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_5" type="radio" value="-1">  Bad </label>
+                  </div>        
+                </div>
+              </div>
+            </div>
+        
+            <div class="panel panel-default">
+              <div class="panel-body" id="6ebaf3c7cdc54dc4a7bca4ed5d0dde22" ><label>Item 10. <a target="_blank" href="http://www.arcgis.com/home/item.html?id=6ebaf3c7cdc54dc4a7bca4ed5d0dde22"><span class="bold" style="width:30px;">[Open ArcGIS Online Item]</span></a></label>
+                
+                <div id="6ebaf3c7cdc54dc4a7bca4ed5d0dde22_info" class="row well" style="padding:0px;margin:0px -5px 5px -5px">
+                  <div style="" class="col-md-4">
+                    <img class="item-logo" style="display: block;padding-left:0px;" src="http://www.arcgis.com/sharing/rest/content/items/6ebaf3c7cdc54dc4a7bca4ed5d0dde22/info/thumbnail/ago_downloaded.png">
+                  </div>
+                  <div style="overflow:hidden;padding-right:0px;" class="col-md-8">
+                    <div class="row">
+                      <p class="col-12"><b>Ontario First Nation Water Quality Status</b></p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Type:</b></p>
+                      <p class="col-9">Web Map</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Tags:</b></p>
+                      <p class="col-9">Water Quality Status; Ontario First Nations; On Reserve Drinking Water Quality</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Snippet:</b></p>
+                      <p class="col-9">Access to safe and clean drinking water in Canada is a basic human right.  Ontario's First Nations reserves are not up to par when it comes to the delivery of clean, drinkable water.</p>
+                    </div>
+                    <div class="row">
+                      <p class="col-3"><b>Desription:</b></p>
+                      <p class="col-9">
+                <div class="col-12">
+                  <button type="button" class="collapsible">Click to see description</button>
+                  <div class="content">
+                    <p><span>On July 28, 2010, the United Nations General Assembly passed a resolution recognizing the basic human right to safe and clean drinking water and sanitation. </span></p><p><span>** text to be added</span></p>
+                  </div>
+                </div>
+                </p>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                
+
+                <div id="f_SEM_0_1">
+                  <label>Please select whether the above ArcGIS Online item is a good search result of the above query:</label>
+
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_1" type="radio" value="3">  Pefect </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_1" type="radio" value="2">  Good </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_1" type="radio" value="1">  Some Relevance</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_1" type="radio" value="0">  Fair </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="R_SEM_0_1" type="radio" value="-1">  Bad </label>
+                  </div>        
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        </div>
+      <!-- End Survey Layout -->
+      </section>
+     <p class="text-center"><input type="submit" id="submitButton" class="btn btn-primary" value="You must ACCEPT the HIT before you can submit the results." disabled=""></p>
+<!-- Please note that Bootstrap CSS/JS and JQuery are 3rd party libraries that may update their url/code at any time. Amazon Mechanical Turk (MTurk) is including these libraries as a default option for you, but is not responsible for any changes to the external libraries --><!-- External CSS references -->
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" integrity="sha384-IS73LIqjtYesmURkDE9MXKbXqYA8rvKEp/ghicjem7Vc3mGRdQRptJSz60tvrB6+" rel="stylesheet"><!-- Open internal style sheet -->
+<style type="text/css">#collapseTrigger{
+  color:#fff;
+  display: block;
+  text-decoration: none;
+}
+#submitButton{
+  white-space: normal;
+}
+.image{
+  margin-bottom: 10px; 
+}
+.item-logo
+{
+    height: 170px;
+    max-width:220px;
+    border-radius:0px;
+    margin: 5px 5px 5px 0px;
+}
+.collapsible {
+  background-color: #428bca;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  border-radius:3px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+<!-- Close internal style sheet --><!-- External JS references --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" integrity="sha384-s1ITto93iSMDxlp/79qhWHi+LsIi9Gx6yL+cOKDuymvihkfol83TYbLbOw+W/wv4" crossorigin="anonymous"></script><!-- Open internal javascript --><script>
+
+  function undisableSubmitButton(){
+    if($('input[name=R_SEM_0_1]:checked').length == 1 && $('input[name=R_SEM_0_2]:checked').length == 1 && $('input[name=R_SEM_0_3]:checked').length == 1 && $('input[name=R_SEM_0_4]:checked').length == 1 && $('input[name=R_SEM_0_5]:checked').length == 1 && $('input[name=R_SEM_0_6]:checked').length == 1 && $('input[name=R_SEM_0_7]:checked').length == 1 && $('input[name=R_SEM_0_8]:checked').length == 1 && $('input[name=R_SEM_0_9]:checked').length == 1 && $('input[name=R_SEM_0_10]:checked').length == 1){
+      document.getElementById("submitButton").disabled = false;
+    }
+  }
+
+  $(document).ready(function() {
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+
+    // Instructions expand/collapse
+    var content = $('#instructionBody');
+    var trigger = $('#collapseTrigger');
+    content.hide();
+    $('.collapse-text').text('(Click to expand)');
+    trigger.click(function(){
+      content.toggle();
+      var isVisible = content.is(':visible');
+      if(isVisible){
+        $('.collapse-text').text('(Click to collapse)');
+      }else{
+        $('.collapse-text').text('(Click to expand)');
+      }
+    });
+    // end expand/collapse
+
+    
+});
+
+</script><!-- CLose internal javascript --></form><script language="Javascript">turkSetAssignmentID();</script></body></html>
+     

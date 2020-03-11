@@ -1,0 +1,315 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+/*******************************Yingjie's Code********************************/
+@CHARSET "UTF-8";
+
+/* Overrides */
+
+.chzn-container-single .chzn-single span, .chzn-results li{
+	font-size: 12pt !important;
+}
+
+.chzn-container{
+	width:95% !important;
+}
+
+/* Overrides */
+
+.bold
+{
+ font-weight: bold;
+}
+
+.container {
+	margin: 0 auto;
+	text-align: center;
+	padding:20px 40px 0 40px;
+	max-width: 960px;
+    
+}
+
+.map .container  {
+	text-align: left !important;
+}
+
+.navbar-margin{
+	margin: 10px 40px 10px 40px;
+}
+
+.bg-img {
+	background: url(/img/background.jpg);
+}
+
+
+ html {
+            overflow: -moz-scrollbars-vertical;
+            overflow-y: scroll;
+        }
+
+
+.border {
+	margin-top:15px;
+	margin-bottom: 25px;
+	border: 1px dotted #CCC;
+	border-right: none;
+	border-left: none;
+	border-bottom: none;
+	clear: both;
+} 
+
+.clear {
+	clear:both;
+}
+
+.round {
+	border-radius: 5px;
+}
+
+.shadow {
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.block {
+	display:block;
+}
+
+
+.blue {	
+	background-color: #165F8C !important;
+	color: #EBEBEB;
+}
+
+.white {
+	background-color: #fff !important;
+	color: #444;
+}
+
+.footer {	
+	line-height: 1;
+	color: #999999;
+	height:150px;
+	margin-top: 30px;
+	border-top: 1px dotted rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+	/*background-color: #fff;*/
+}
+
+.footer .row {
+	/*padding:20px 0;*/
+}
+
+.mousePointer
+{
+   cursor:pointer;      
+}
+
+
+@media (min-width: 980px) {
+    .topmenufixed {
+        padding-top: 60px;
+    }
+}
+
+
+
+/* loading icon begin------------------*/
+.loadingWaitIcon {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 44, 44, 44, .5 ) 
+                url('/img/loading.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+body.loading {
+    overflow: hidden;   
+}
+
+
+body.loading .loadingWaitIcon {
+    display: block;
+}
+
+/* loading icon end------------------*/
+
+
+
+/* for select target radio button*/
+#searchOptionContainer  ul li{position:relative;padding:0 20px 18px 30px;float:left;}
+#searchOptionContainer  ul input{position:absolute;top:4px;left:0}
+#searchOptionContainer  ul .icheckbox_squar-blue, ul .iradio_square-blue{position:absolute;top:-1px;left:0}
+/* radio button finished*/
+
+
+/* fix the thumbnail problem */
+.row-fluid ul.thumbnails li.span12 + li { margin-left : 0px; }
+.row-fluid ul.thumbnails li.span6:nth-child(2n + 3) { margin-left : 0px; }
+.row-fluid ul.thumbnails li.span4:nth-child(3n + 4) { margin-left : 0px; }
+.row-fluid ul.thumbnails li.span3:nth-child(4n + 5) { margin-left : 0px; } 
+/* finished thumbnail problem */
+
+
+
+
+/* for the search results*/
+.item-active
+{
+     border-color: rgba(82, 168, 236, 0.8);
+	 -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+	 -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+	 box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+	 outline: 0;
+	 outline: thin dotted \9;
+}
+
+.item
+{
+	background: white;
+}
+
+.item:hover 
+{
+	  border-color: rgba(82, 168, 236, 0.8);
+	  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+	  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+	  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+	  outline: 0;
+	  outline: thin dotted \9; 
+}
+/* search results completed */
+
+.item-logo
+{
+	/*
+	float: left;	
+    
+    max-height:120px;
+    max-width:190px;
+    */
+    height: 150px;
+    max-width:220px;
+    border-radius:5px;
+    margin: 5px 20px 5px 5px;
+    /*margin: auto;
+  	position: absolute; 
+  	top: 0; left: 0; bottom: 0; right: 0; */
+}
+
+.break-word
+{
+	word-wrap:break-word;
+}
+
+
+/* These two classes make ellipsis*/
+.ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.ellipsis.multiline {
+	white-space: normal;
+}
+
+
+/* Map css module */
+  #mapdiv,#searchResultsMapDiv{
+  position:relative;
+        margin: 0;
+        padding: 0;
+        height:100%;
+        width: 100% !important;
+        z-index:99;
+      }
+
+      #locationdiv {
+        position:absolute;top:10px;right:10px;z-index:888;
+      }
+      
+      
+      
+/* canvas style */
+
+.infovis-canvas 
+{
+    position:relative;
+    width:340px;
+    height:340px;
+    margin:auto;
+    overflow:hidden;
+}
+
+
+.tip {
+    color: #111;
+    width: 139px;
+    background-color: white;
+    border:1px solid #ccc;
+    -moz-box-shadow:#555 2px 2px 8px;
+    -webkit-box-shadow:#555 2px 2px 8px;
+    -o-box-shadow:#555 2px 2px 8px;
+    box-shadow:#555 2px 2px 8px;
+    opacity:0.9;
+    filter:alpha(opacity=90);
+    font-size:10px;
+    font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+    padding:7px;
+}
+
+
+
+
+
+
+/************************************************************Ge3ngchen's CSS**********************************************************************/
+.tagbox {
+	background-color:#ffffff;
+	border: 1px solid #ccc;
+	margin:0px 10px 10px 0px;
+	line-height: 200%;
+	padding:2px 0 2px 2px;
+	border-radius: 2px;
+}
+
+.taglink  {
+padding:2px;
+}
+
+.tagbox a, .tagbox a:visited, .tagbox a:active {
+	text-decoration:none;
+}
+ 
+.tagcount {
+	background-color:green;
+	color:white;
+	position: relative;
+	padding:2px;
+}
+
+.tagIcon {
+	height:22px;
+	width:22px;
+	position: relative;
+	border-radius: 0px 2px 2px 0px;
+	/*padding:2px;*/
+}
+
+.searchResultPanel{
+	height: 440px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}

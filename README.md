@@ -1,4 +1,4 @@
-# Semantically-Enriched Search Engine for Geoportals:  A Case Study with ArcGIS Online,
+# Semantically-Enriched Search Engine for Geoportals:  A Case Study with ArcGIS Online
 Code for our ArcGIS Online semantically-enriched search engine presented in [our AGILE 2020 paper](http://www.geog.ucsb.edu/~gengchen_mai/).
 
 ## Search Engine Architecture
